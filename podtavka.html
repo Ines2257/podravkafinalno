@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PODRAVKA</title>
+
+    <style>
+        /* Osnovni stilovi */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f44336;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        /* Glavni sadržaj */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content h2 {
+            color: #333;
+        }
+        
+        /* Sekcija proizvoda */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        /* Sekcija recepata */
+        .recipes {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .recipes h2 {
+            color: #333;
+        }
+        .recipe {
+            display: inline-block;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        /* Kontakt forma */
+        .contact-form {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-form form {
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            margin-top: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Podnožje */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Zaglavlje -->
+<header>
+    <h1>Podravka</h1>
+</header>
+
+<!-- Navigacija -->
+<nav>
+    <a href="#home">Početna</a>
+    <a href="#proizvodi">Proizvodi</a>
+    <a href="#recepti">Recepti</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<!-- Glavni sadržaj -->
+<div class="main-content" id="home">
+    <h2>Dobrodošli na našu stranicu!</h2>
+    <p>Ovdje možete pronaći ukusne proizvode i inspirativne recepte za svakodnevno kuhanje.</p>
+</div>
+
+<!-- Sekcija proizvoda -->
+<section id="proizvodi">
+    <h2>Naši Proizvodi</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://podravkaiovariations.azureedge.net/8d731870-7678-11ef-97d6-5a346d4c0148/v/9ed607bc-4c1b-11ea-9bb0-92f307bc0925/450x600-9ed6ed4e-4c1b-11ea-9140-92f307bc0925.png" alt="Proizvod 1">
+            <h3>Muesli</h3>
+            <p>Ukusni proizvod koji donosi zdravlje i energiju.</p>
+        </div>
+        <div class="product">
+            <img src="https://podravkaiovariations.azureedge.net/344f89d8-6d80-11ee-929b-0e5697c75cc4/v/9ed607bc-4c1b-11ea-9bb0-92f307bc0925/450x600-9ed6ed4e-4c1b-11ea-9140-92f307bc0925.jpeg" alt="Proizvod 2">
+            <h3>Juha</h3>
+            <p>Pripremite ukusne obroke s našim kvalitetnim proizvodom.</p>
+        </div>
+        <div class="product">
+            <img src="https://podravkaiovariations.azureedge.net/eccb4176-498c-11ea-ab17-b6765453ea7f/v/9ed607bc-4c1b-11ea-9bb0-92f307bc0925/450x600-9ed6ed4e-4c1b-11ea-9140-92f307bc0925.png" class="mala-slika"  alt="Proizvod 3">
+            <h3>Vegeta</h3>
+            <p>Savršen dodatak svakom jelu.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sekcija recepata -->
+<section class="recipes" id="recepti">
+    <h2>Inspiracija za recepte</h2>
+    <div class="recipe">
+        <h3>Recept 1: Zdrava salata</h3>
+        <p> Potrebni sastojci: salata, rajčica, maslinovo ulje, sol, papar.</p>
+        <p>Upute: Sve sastojke pomiješajte u zdjeli i poslužite.</p>
+    </div>
+    <div class="recipe">
+        <h3>Recept 2: Piletina s povrćem</h3>
+        <p>Potrebni sastojci: piletina, paprika, luk, maslinovo ulje.</p>
+        <p>Upute: Piletinu i povrće pirjajte dok ne omekša.</p>
+    </div>
+</section>
+
+<!-- Kontakt forma -->
+<section class="contact-form" id="kontakt">
+    <h2>Kontaktirajte nas</h2>
+    <form>
+        <label for="name">Ime:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Poruka:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Pošalji poruku</button>
+    </form>
+</section>
+
+</body>
+</html>
+
+
